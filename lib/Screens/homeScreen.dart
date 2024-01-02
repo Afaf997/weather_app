@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
           // width: 130,
           child: Column(
             children: [
-             const Text("21°C", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 55),),
+             const Text("21°C", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 55,),),
              const Text("thunders", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 26),),
               Text(DateTime.now().toString(), style: const TextStyle(color: Colors.white,),),
             ],),
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
       
     ],
   ),
-      ),
+      ),//
       // body: Padding(padding: const EdgeInsets.fromLTRB(40, 1.2 *kToolbarHeight,40,20),
       // child: SizedBox(
       //   height:MediaQuery.of(context).size.height,
