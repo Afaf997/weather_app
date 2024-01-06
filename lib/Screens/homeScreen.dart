@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
         alignment:const Alignment(0,-0.5),
         child:Container(
           height: 130,
-          // width: 130,
+          width: 130,
           child: Column(
             children: [
              const Text("21°C", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 55,),),
