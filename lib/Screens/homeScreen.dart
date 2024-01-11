@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:weather_app/Screens/image.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
     Size size=MediaQuery.of(context).size;
     return  Scaffold(
       backgroundColor: Colors.black,
-      extendBodyBehindAppBar: true, // full screen image
+      extendBodyBehindAppBar: true, 
        appBar: AppBar(),
       body: Container(
         padding: EdgeInsets.only(top:40,left: 20,right: 20,bottom: 20),
@@ -44,19 +45,10 @@ class HomeScreen extends StatelessWidget {
           )
         ],),
       ),
+      
       Align(
         alignment:const Alignment(0,-0.5),
-        child:Container(
-          height: 130,
-          width: 130,
-          child: Column(
-            children: [
-             const Text("21°C", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 55,),),
-             const Text("thunders", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 26),),
-              Text(DateTime.now().toString(), style: const TextStyle(color: Colors.white,),),
-            ],),
-        ),
-      )
+        child:Image.asset(imagepath[0]))
       
     ],
   ),
