@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'weather_app',
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
+        appBarTheme:const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 1
         )
       ),
-      home: HomeScreen(),
+      home:const HomeScreen(),
 
     ); 
   }
